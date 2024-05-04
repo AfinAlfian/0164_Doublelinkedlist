@@ -58,6 +58,12 @@ void addNode() {
         {
             previous->next = newNode;   //step 7
         }
+        else
+        {
+            //if previous is  still null, it means new node is now the first node
+            START = newNode;
+        }
+    }
 }
 
 int main() 
