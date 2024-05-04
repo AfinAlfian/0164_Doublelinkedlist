@@ -12,7 +12,7 @@ struct Node {
 Node* START = NULL;
 
 void addNode() {
-
+    Node* newNode = new Node();
 }
 
 int main() 
