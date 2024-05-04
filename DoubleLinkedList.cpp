@@ -27,6 +27,12 @@ void addNode() {
         }
 
         newNode->next = START;
+        if (START != NULL)
+        {
+            START->prev = newNode;  //step 4 make first node ppoint to new node
+        }
+        newNode->prev = NULL;   // step 5 make the new node  point to null
+        START = newNode;
     }
 }
 
